@@ -1,5 +1,6 @@
 package fishbowl.shivermetimbers;
 
+import fishbowl.shivermetimbers.registry.SMTBlocks;
 import fishbowl.shivermetimbers.registry.SMTItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
@@ -21,6 +22,7 @@ public class ShiverMeTimbers {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
         SMTItems.ITEMS.register(bus);
+        SMTBlocks.BLOCKS.register(bus);
     }
 
 }
